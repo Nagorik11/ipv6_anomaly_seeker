@@ -1,62 +1,4 @@
 
-# IPv6 Advanced Security & Anomaly Audit
-
-### Auditoría automática de seguridad en IPv6 (Linux)
-
-Este proyecto entrega un **script de auditoría IPv6 avanzado**, diseñado para usuarios que quieren revisar si su equipo está **expuesto**, si tiene **puertos abiertos**, si está detrás de **CGNAT**, si algún proceso está escuchando sin permiso, y si existe actividad sospechosa relacionada con conexiones IPv6.
-
-El informe se genera en consola y también se guarda en un archivo JSON para revisión posterior.
-
----
-
-## 🚀 Características principales
-
-* **Detección de direcciones IPv6 globales y temporales**
-  Identifica si el dispositivo está expuesto públicamente y si la privacidad mejorada está activada.
-
-* **Escaneo de servicios que escuchan en IPv6 (TCP/UDP)**
-  Muestra qué programas están recibiendo conexiones desde internet.
-
-* **Análisis de puertos críticos**
-  Verifica si puertos sensibles están expuestos (SSH, bases de datos, web, etc.).
-
-* **Escaneo ampliado de puertos estratégicos**
-  Escaneo rápido de puertos 1–1024 más puertos de riesgo frecuente.
-
-* **Análisis externo avanzado**
-  Obtiene IP pública, ASN, ciudad, hostname, estabilidad y detección de posible VPN o CGNAT.
-
-* **Detección de procesos sospechosos**
-  Revisa patrones comunes de malware que utiliza IPv6.
-
-* **Revisión de firewall IPv6**
-  Soporte automático para:
-
-  * UFW
-  * ip6tables
-  * nftables
-
-* **Detección avanzada de CGNAT**
-  Usa IP pública + TTL + rangos + consistencia de servicios externos.
-
----
-
-## 📦 Requisitos
-
-El script detecta dependencias automáticamente, pero idealmente el sistema debería contar con:
-
-* `bash`
-* `curl`
-* `ss`
-* `ip`
-* `nft` (opcional)
-* `ufw` (opcional)
-* `netcat`/`nc` (opcional)
-
----
-
-## 📥 Instalación
-
 
 # IPv6 Advanced Security & Anomaly Audit
 
@@ -335,8 +277,6 @@ MIT — Libre para modificar y distribuir.
 
 ---
 
-¿Quieres que también genere el **logo del proyecto**, **capturas**, o un **badge de GitHub Actions** para automatizar pruebas? ¿Te lo preparo? ¿️
-.git
 cd ipv6-anomaly-seeker
 chmod +x ipv6_audit.sh
 ```
