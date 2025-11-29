@@ -1,6 +1,3 @@
-Aquí tienes un **README.md listo para subir a GitHub**, claro, moderno y sin tecnicismos innecesarios. Presenta el script como una herramienta profesional, robusta y fácil de entender.
-
----
 
 # IPv6 Advanced Security & Anomaly Audit
 
